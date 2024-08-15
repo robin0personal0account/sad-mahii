@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Ninja Message for Mahi</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+            background-image: url('naruto_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .header {
+            background-color: rgba(255, 140, 0, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+            animation: slideIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 4px #000;
+            color: #ffd700;
+        }
+
+        .content {
+            margin-top: 30px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        p {
+            font-size: 22px;
+            margin: 20px 0;
+            color: #fffacd;
+            animation: pulse 3s infinite;
+        }
+
+        .image-container {
+            margin: 30px 0;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        .image-container img {
+            width: 250px;
+            border-radius: 50%;
+            border: 5px solid #ffd700;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .message-button {
+            background-color: #ff4500;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px #c41c00;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            animation: fadeIn 5s ease-in-out;
+        }
+
+        .message-button:hover {
+            background-color: #e03e00;
+            transform: scale(1.05);
+        }
+
+        .extra-message {
+            margin-top: 40px;
+            font-size: 18px;
+            color: #ffd700;
+            animation: fadeIn 6s ease-in-out;
+        }
+
+        .extra-message span {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Hello Mahi, You're Amazing!</h1>
+    </div>
+    <div class="content">
+        <div class="image-container">
+            <img src="img/Naruto3 Wall And Art Print _ Naruto-shippuden.jpg" alt="Naruto Image">
+        </div>
+        <p>Even on tough days, remember that you're strong and capable. Just like Naruto, you can face anything with a smile!</p>
+        <button class="message-button" onclick="alert('Never forget, Mahi: Believe in yourself, just like Naruto! 🧡')">Get Your Ninja Wisdom</button>
+    </div>
+    <div class="extra-message">
+        <span>“If you don’t like your destiny, don’t accept it. Instead, have the courage to change it the way you want it to be.”</span>
+        <span>– Naruto Uzumaki</span>
+    </div>
+</body>
+</html>
